@@ -1,8 +1,18 @@
 import "./App.css";
-import { connect } from "react-redux"
+import { connect } from "react-redux";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <p>Reminders App</p>
+    </div>
+  );
 }
 
-export default connect()(App);
+function mapStateToProps(state) {
+  return {
+    names: state.names,
+  };
+}
+
+export default connect(mapStateToProps)(App);
