@@ -11,7 +11,7 @@ function App() {
 
 function mapStateToProps(state) {
   return {
-    names: state.names,
+    reminders: state.reminders,
   };
 }
 
