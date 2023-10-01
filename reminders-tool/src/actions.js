@@ -8,7 +8,7 @@ export function addReminder(text) {
   };
 }
 
-function deleteReminder(text) {
+export function deleteReminder(text) {
   return {
     type: "DELETE_REMINDER",
     payload: text,
