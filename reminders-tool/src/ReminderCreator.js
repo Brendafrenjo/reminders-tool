@@ -37,7 +37,9 @@ function ReminderCreator(props) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    addReminder: (text) => dispatch(addReminder(text)),
+    addReminder: function (text) {
+      dispatch(addReminder(text));
+    },
   };
 }
 
