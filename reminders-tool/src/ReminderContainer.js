@@ -1,6 +1,7 @@
-import Recat from "react";
+import React from "react";
 import { connect } from "react-redux";
 import Reminder from "/.Reminder.js";
+import "./ReminderContainer.css"
 
 function ReminderContainer(props) {
   {
@@ -9,7 +10,7 @@ function ReminderContainer(props) {
     ));
 
     return (
-      <div>
+      <div className="styles">
         <h2>Type Reminders Below:</h2>
         {listReminders}
       </div>
